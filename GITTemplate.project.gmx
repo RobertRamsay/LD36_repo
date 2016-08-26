@@ -32,6 +32,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\s_test.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\object0</object>
