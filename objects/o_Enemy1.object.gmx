@@ -87,7 +87,7 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
     
     motion_set(PIAngle, speed);
     
-    speed = 8;
+    speed = 6;
     
 } else {
     
