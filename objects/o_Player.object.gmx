@@ -132,6 +132,30 @@ sprite_index=s_Player2
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>depth</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-y</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -181,8 +205,7 @@ if animstate=clubleft and done=0
     sprite_index=s_aimClub_L
     alarm[2]=10;done=1
     }
-    
-depth=-y // for scenery correction
+
 </string>
           </argument>
         </arguments>
