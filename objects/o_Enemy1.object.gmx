@@ -43,7 +43,11 @@ myDir.pFollow = id;
 
 image_blend=c_red;
 
-getNode=instance_nearest(x,y,o_NODE)
+nextstop = 0;
+
+rand = 0;
+
+getNode=noone;
 </string>
           </argument>
         </arguments>
@@ -66,15 +70,30 @@ getNode=instance_nearest(x,y,o_NODE)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>with (o_NODE) {
+   if ( stop = other.nextstop + 1 ) {
+       other.getNode = id;
+   }
+    
+}
+    
 if ( point_distance(x,y,getNode.x,getNode.y) &gt; 16 ) {
-    image_index = round((point_direction(x,y,getNode.x,getNode.y) / 10) *10)
-    speed=5
+
+    image_index = point_direction(x,y,getNode.x,getNode.y) div 10
+    
+    PIAngle = myDir.image_angle;
+    
+    motion_set(PIAngle, speed);
+    
+    speed = 5;
+    
+} else {
+    
+    nextstop +=1
+
 }
 
-PIAngle = myDir.image_angle;
 
-motion_set(PIAngle, speed);
 </string>
           </argument>
         </arguments>
