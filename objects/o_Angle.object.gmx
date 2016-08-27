@@ -32,6 +32,8 @@ image_speed = 0;
 image_angle = 0;
 
 pFollow = noone;
+
+maths=0;
 </string>
           </argument>
         </arguments>
@@ -55,7 +57,6 @@ pFollow = noone;
           <argument>
             <kind>1</kind>
             <string>///Change Angle
-
 if (pFollow != noone) {
     x=pFollow.x
     y=pFollow.y
@@ -65,7 +66,12 @@ if (pFollow != noone) {
 
 var pd = pFollow.image_index * 10;
 var dd = angle_difference(image_angle, pd);
-image_angle -= min(abs(dd), 6) * sign(dd);
+maths = min(abs(dd), 5) * sign(dd);
+if (maths != 0) {
+    
+}
+image_angle -= min(abs(dd), 5) * sign(dd);    
+
 </string>
           </argument>
         </arguments>
@@ -88,7 +94,7 @@ image_angle -= min(abs(dd), 6) * sign(dd);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50, 50, image_angle);
+            <string>draw_text(50, 50, maths);
 </string>
           </argument>
         </arguments>
