@@ -24,6 +24,9 @@
       <sprites name="WorldDetail">
         <sprite>sprites\s_TemplateTree1</sprite>
         <sprite>sprites\s_TemplateTree2</sprite>
+        <sprite>sprites\s_plant</sprite>
+        <sprite>sprites\s_rock</sprite>
+        <sprite>sprites\s_tree</sprite>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -52,6 +55,9 @@
     </objects>
     <objects name="World">
       <object>objects\o_Temp_Grass</object>
+      <object>objects\o_plant</object>
+      <object>objects\o_tree</object>
+      <object>objects\o_Rock</object>
     </objects>
   </objects>
   <rooms name="rooms">
