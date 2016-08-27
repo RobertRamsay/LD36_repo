@@ -34,6 +34,7 @@ image_angle = 0;
 pFollow = noone;
 
 maths=0;
+rotSpeed=0
 </string>
           </argument>
         </arguments>
@@ -66,12 +67,14 @@ if (pFollow != noone) {
 
 var pd = pFollow.image_index * 10;
 var dd = angle_difference(image_angle, pd);
-maths = min(abs(dd), 5) * sign(dd);
-if (maths != 0) {
-    
-}
-image_angle -= min(abs(dd), 5) * sign(dd);    
 
+//maths = min(abs(dd), rotSpeed) * sign(dd);
+
+rotSpeed = clamp(10-((pFollow.speed/(pFollow.maxSpeed*2))*10)+pFollow.tires,3,10);
+
+maths = rotSpeed
+
+image_angle -= min(abs(dd), rotSpeed) * sign(dd);
 </string>
           </argument>
         </arguments>

@@ -31,6 +31,10 @@ image_speed = 0;
 
 PIAngle = 0;
 
+maxSpeed = 5;
+
+tires = 1;
+
 friction=0.2
 
 myDir = instance_create(x,y,o_Angle);
@@ -63,7 +67,7 @@ myDir.pFollow = id;
 
 //Controls
 if ( keyboard_check(vk_left) ) {
-    image_index += 1
+    image_index += 1;
 }
 if (keyboard_check(vk_right) ) {
     image_index -= 1
@@ -71,6 +75,7 @@ if (keyboard_check(vk_right) ) {
 
 PIAngle = myDir.image_angle;
 
+motion_set(PIAngle, speed);
 </string>
           </argument>
         </arguments>
@@ -95,10 +100,10 @@ PIAngle = myDir.image_angle;
             <kind>1</kind>
             <string>///Brakes
 
-friction += 0.05
+speed -= 0.5
 
-if (friction &gt; 0.5) {
-    friction = 0.5
+if (speed &lt; 0) {
+    speed = 0;
 }
 </string>
           </argument>
@@ -124,12 +129,9 @@ if (friction &gt; 0.5) {
             <kind>1</kind>
             <string>///Add Speed
 
-friction=0.2
-
 speed += 1;
-motion_set(PIAngle, speed);
 
-if (speed &gt; 10) { speed = 10; }
+if (speed &gt; maxSpeed * 2 ) { speed = maxSpeed * 2; }
 </string>
           </argument>
         </arguments>
