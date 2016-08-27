@@ -31,9 +31,8 @@ image_speed = 0;
 
 PIAngle = 0;
 
-maxSpeed = 5;
-
-tires = 5;
+maxSpeed = 1;
+tires = 1;
 
 friction=0.2
 
@@ -63,7 +62,6 @@ myDir.pFollow = id;
           <argument>
             <kind>1</kind>
             <string>///Controls - Driving Phys
-
 
 //Controls
 if ( keyboard_check(vk_left) ) {
@@ -131,7 +129,7 @@ if (speed &lt; 0) {
 
 speed += 1;
 
-if (speed &gt; maxSpeed * 2 ) { speed = maxSpeed * 2; }
+if (speed &gt; maxSpeed + 5 ) { speed = maxSpeed + 5; }
 </string>
           </argument>
         </arguments>

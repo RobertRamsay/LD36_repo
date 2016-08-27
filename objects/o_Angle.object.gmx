@@ -68,7 +68,7 @@ if (pFollow != noone) {
 var pd = pFollow.image_index * 10;
 var dd = angle_difference(image_angle, pd);
 
-rotSpeed = clamp(10-((pFollow.speed/(pFollow.maxSpeed*2))*10),pFollow.tires+1,10);
+rotSpeed = clamp(10-((pFollow.speed/(pFollow.maxSpeed+5))*10),pFollow.tires+1,10);
 
 maths = rotSpeed
 
