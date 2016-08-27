@@ -29,27 +29,32 @@
 
 image_speed = 0;
 
-PIAngle = 0;
+image_blend=c_red;
 
 maxSpeed = 1;
 
 tires = 1;
 
+caution = 1;
+
 friction=0.2
+
+// Movement\Turning
 
 myDir = instance_create(x,y,o_Angle);
 
 myDir.pFollow = id;
 
-image_blend=c_red;
+PIAngle = 0;
 
+i_angle=0;
+
+//Navigation
 nextstop = 0;
 
-rand=choose(1,2,3);
+//rand=choose(1,2,3);
 
 getNode=noone;
-
-i_angle=0
 </string>
           </argument>
         </arguments>
@@ -97,8 +102,8 @@ i_angle=0
           <argument>
             <kind>1</kind>
             <string>with (o_NODE) {
-   if ( stop = other.nextstop + 1 ) {
-       if (rand = other.rand) {
+   if ( stop == other.nextstop + 1 ) {
+       if (rand == other.rand) {
             other.getNode = id;
        }
    }
@@ -106,26 +111,28 @@ i_angle=0
 }
     
 if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
-
-    //image_index = point_direction(x,y,getNode.x,getNode.y) div 10
     
     var pd = (point_direction(x,y,getNode.x,getNode.y) div 10) * 10;
     var ad = angle_difference(image_index*10, pd);
     
     i_angle -= min(abs(ad), 5) * sign(ad);
     
-    image_index = i_angle div 10
+    image_index = i_angle div 10;
     
     PIAngle = myDir.image_angle;
     
     motion_set(PIAngle, speed);
     
-    speed = 6;
+    if ( point_distance(x,y,getNode.x,getNode.y) &lt; 128 &amp;&amp; getNode.sTurn = true ) {
+        speed = (maxSpeed + 5) - caution;
+    } else {
+        speed = (maxSpeed + 5)
+    }
     
 } else {
     
     nextstop +=1
-    rand=choose(1,2,3);
+    //rand=choose(1,2,3);
 
 }
 

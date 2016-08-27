@@ -36,6 +36,8 @@ pFollow = noone;
 maths=0;
 
 rotSpeed=0
+
+sTurn=false;
 </string>
           </argument>
         </arguments>
