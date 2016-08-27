@@ -30,7 +30,9 @@
       <sprite>sprites\s_Enemy4</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\b_map1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\s_test.gml</script>
