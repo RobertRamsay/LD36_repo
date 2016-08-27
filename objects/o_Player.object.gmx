@@ -33,7 +33,7 @@ PIAngle = 0;
 
 maxSpeed = 5;
 
-tires = 1;
+tires = 5;
 
 friction=0.2
 
