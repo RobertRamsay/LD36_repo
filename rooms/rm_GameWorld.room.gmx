@@ -71,6 +71,7 @@
     <instance objName="o_Temp_Grass" x="448" y="480" name="inst_25A59534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Temp_Grass" x="576" y="480" name="inst_F3DB2707" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Temp_Grass" x="704" y="480" name="inst_AD7CBB08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Player" x="448" y="608" name="inst_33848509" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
