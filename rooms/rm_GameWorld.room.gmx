@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="o_Player" x="448" y="608" name="inst_33848509" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_Enemy1" x="576" y="640" name="inst_74EEA986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="736" y="576" name="inst_D9260AA1" locked="0" code="stop=0&#xA;rand=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="768" y="608" name="inst_6CC7D4FA" locked="0" code="stop=0&#xA;rand=2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="800" y="640" name="inst_3EE7839A" locked="0" code="stop=0&#xA;rand=3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -125,6 +124,7 @@
     <instance objName="o_plant" x="984" y="600" name="inst_2A4443C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_plant" x="768" y="352" name="inst_2A5A479B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_plant" x="664" y="448" name="inst_05CF38A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Enemy2" x="600" y="640" name="inst_5C9C1D56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_tileSet1" x="704" y="576" w="64" h="64" xo="576" yo="448" id="10000001" name="inst_A75248D8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

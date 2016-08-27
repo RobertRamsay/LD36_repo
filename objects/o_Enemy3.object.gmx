@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Enemy1 Init
-
+            <string>
 image_speed = 0;
 
 image_blend=c_red;
@@ -61,30 +60,6 @@ getNode=noone;
       </action>
     </event>
     <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>depth</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-y</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -135,8 +110,6 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
     //rand=choose(1,2,3);
 
 }
-
-
 </string>
           </argument>
         </arguments>
@@ -159,7 +132,7 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50, 100, i_angle)
+            <string>draw_text(50, 100, i_angle);
 </string>
           </argument>
         </arguments>
