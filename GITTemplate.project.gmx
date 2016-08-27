@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\s_Player2</sprite>
+      <sprite>sprites\s_plr_aimClub_R</sprite>
+      <sprite>sprites\s_hitClub_R</sprite>
       <sprite>sprites\s_Player3</sprite>
       <sprite>sprites\s_Player4</sprite>
     </sprites>
