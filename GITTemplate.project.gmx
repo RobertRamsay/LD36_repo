@@ -40,7 +40,7 @@
   </scripts>
   <objects name="objects">
     <objects name="Player">
-      <object>objects\object0</object>
+      <object>objects\o_Player</object>
     </objects>
     <objects name="World">
       <object>objects\o_Temp_Grass</object>
