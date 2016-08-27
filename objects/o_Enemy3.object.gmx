@@ -78,9 +78,9 @@ getNode=noone;
             <kind>1</kind>
             <string>with (o_NODE) {
    if ( stop == other.nextstop + 1 ) {
-       if (rand == other.rand) {
+       //if (rand == other.rand) {
             other.getNode = id;
-       }
+       //}
    }
     
 }
@@ -98,7 +98,7 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
     
     motion_set(PIAngle, speed);
     
-    if ( point_distance(x,y,getNode.x,getNode.y) &lt; 128 &amp;&amp; getNode.sTurn = true ) {
+    if ( point_distance(x,y,getNode.x,getNode.y) &lt; 128 &amp;&amp; caution &gt;= 1 ) {
         speed = (maxSpeed + 5) - caution;
     } else {
         speed = (maxSpeed + 5)
