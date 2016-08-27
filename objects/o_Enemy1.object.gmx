@@ -72,12 +72,14 @@ getNode=noone;
             <kind>1</kind>
             <string>with (o_NODE) {
    if ( stop = other.nextstop + 1 ) {
-       other.getNode = id;
+       if (rand = other.rand) {
+            other.getNode = id;
+       }
    }
     
 }
     
-if ( point_distance(x,y,getNode.x,getNode.y) &gt; 16 ) {
+if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
 
     image_index = point_direction(x,y,getNode.x,getNode.y) div 10
     
@@ -85,7 +87,7 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 16 ) {
     
     motion_set(PIAngle, speed);
     
-    speed = 5;
+    speed = 8;
     
 } else {
     

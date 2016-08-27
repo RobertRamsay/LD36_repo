@@ -31,7 +31,7 @@ image_speed = 0;
 
 PIAngle = 0;
 
-maxSpeed = 1;
+maxSpeed = 5;
 tires = 1;
 
 friction=0.2
