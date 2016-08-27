@@ -46,6 +46,7 @@ animstate=0 // idle
 idle=0
 clubleft=1 
 clubright=2
+done=0 // for coming out
 
 </string>
           </argument>
@@ -95,7 +96,7 @@ alarm[0]=7
           <argument>
             <kind>1</kind>
             <string>/// go to idle mode
-animstate=idle
+animstate=idle;done=0
 sprite_index=s_Player2
 
 </string>
@@ -144,10 +145,10 @@ if ( keyboard_check_pressed(ord('X'))) {
     animstate=clubright
     }
     
-if animstate=clubright
+if animstate=clubright and done=0
     {
     sprite_index=s_aimClub_R
-    alarm[1]=10
+    alarm[1]=10;done=1
     }
     
     
