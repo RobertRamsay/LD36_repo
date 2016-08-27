@@ -30,6 +30,8 @@
 image_speed = 0;
 
 PIAngle = 0;
+
+friction=0.1
 </string>
           </argument>
         </arguments>
@@ -88,7 +90,7 @@ PIAngle = image_index * 10
             <kind>1</kind>
             <string>///Add Speed
 
-motion_add(PIAngle, 0.2);
+motion_set(PIAngle, 3);
 
 if (speed &gt; 3) { speed = 3; }
 </string>
