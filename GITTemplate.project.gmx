@@ -52,9 +52,8 @@
   <objects name="objects">
     <objects name="Player">
       <object>objects\o_Player</object>
+      <object>objects\o_Enemy3</object>
       <object>objects\o_Angle</object>
-      <object>objects\o_Enemy1</object>
-      <object>objects\o_Enemy2</object>
       <object>objects\o_NODE</object>
     </objects>
     <objects name="World">
