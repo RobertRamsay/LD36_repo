@@ -39,6 +39,65 @@ friction=0.2
 myDir = instance_create(x,y,o_Angle);
 
 myDir.pFollow = id;
+
+// animation states // enums for anim states
+
+animstate=0 // idle
+idle=0
+clubleft=1 
+clubright=2
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// go to club attack frame 2
+sprite_index=s_hitClub_R
+alarm[0]=7
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// go to idle mode
+animstate=idle
+sprite_index=s_Player2
+
 </string>
           </argument>
         </arguments>
@@ -74,6 +133,24 @@ if (keyboard_check(vk_right) ) {
 PIAngle = myDir.image_angle;
 
 motion_set(PIAngle, speed);
+
+if ( keyboard_check_pressed(ord('Z'))) {
+    // hit left
+    animstate=clubleft
+    }
+    
+if ( keyboard_check_pressed(ord('X'))) {
+    // hit right
+    animstate=clubright
+    }
+    
+if animstate=clubright
+    {
+    sprite_index=s_aimClub_R
+    alarm[1]=10
+    }
+    
+    
 </string>
           </argument>
         </arguments>
