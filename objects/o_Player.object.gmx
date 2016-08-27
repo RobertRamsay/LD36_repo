@@ -53,6 +53,31 @@ done=0 // for coming out
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// go to club attack frame 2
+sprite_index=s_hitClub_L
+alarm[0]=7
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -151,7 +176,13 @@ if animstate=clubright and done=0
     alarm[1]=10;done=1
     }
     
+if animstate=clubleft and done=0
+    {
+    sprite_index=s_aimClub_L
+    alarm[2]=10;done=1
+    }
     
+depth=-y // for scenery correction
 </string>
           </argument>
         </arguments>
