@@ -48,6 +48,8 @@ nextstop = 0;
 rand=choose(1,2,3);
 
 getNode=noone;
+
+i_angle=0
 </string>
           </argument>
         </arguments>
@@ -81,7 +83,14 @@ getNode=noone;
     
 if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
 
-    image_index = point_direction(x,y,getNode.x,getNode.y) div 10
+    //image_index = point_direction(x,y,getNode.x,getNode.y) div 10
+    
+    var pd = (point_direction(x,y,getNode.x,getNode.y) div 10) * 10;
+    var ad = angle_difference(image_index*10, pd);
+    
+    i_angle -= min(abs(ad), 5) * sign(ad);
+    
+    image_index = i_angle div 10
     
     PIAngle = myDir.image_angle;
     
@@ -97,6 +106,29 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(50, 100, i_angle)
 </string>
           </argument>
         </arguments>
