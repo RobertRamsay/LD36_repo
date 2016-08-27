@@ -9,6 +9,8 @@
     <sprites name="Player">
       <sprite>sprites\s_Player2</sprite>
       <sprite>sprites\s_aimClub_R</sprite>
+      <sprite>sprites\s_hitClub_L</sprite>
+      <sprite>sprites\s_aimClub_L</sprite>
       <sprite>sprites\s_hitClub_R</sprite>
       <sprite>sprites\s_Player3</sprite>
       <sprite>sprites\s_Player4</sprite>
@@ -34,6 +36,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\b_map1</background>
+    <background>background\b_tileSet1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
