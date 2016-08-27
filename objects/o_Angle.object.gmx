@@ -60,6 +60,10 @@ if (pFollow != noone) {
     x=pFollow.x
     y=pFollow.y
 }
+
+image_angle = lerp(pFollow.image_index * 10, image_angle, 0.9);
+
+
 </string>
           </argument>
         </arguments>

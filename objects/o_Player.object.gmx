@@ -69,7 +69,8 @@ if (keyboard_check(vk_right) ) {
     image_index -= 1
 }
 
-PIAngle = image_index * 10
+PIAngle = myDir.image_angle;
+
 </string>
           </argument>
         </arguments>
