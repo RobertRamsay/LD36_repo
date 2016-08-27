@@ -40,6 +40,8 @@ friction=0.2
 myDir = instance_create(x,y,o_Angle);
 
 myDir.pFollow = id;
+
+image_blend=c_red;
 </string>
           </argument>
         </arguments>
