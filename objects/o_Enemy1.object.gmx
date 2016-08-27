@@ -45,7 +45,7 @@ image_blend=c_red;
 
 nextstop = 0;
 
-rand = 0;
+rand=choose(1,2,3);
 
 getNode=noone;
 </string>
@@ -90,6 +90,7 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 16 ) {
 } else {
     
     nextstop +=1
+    rand=choose(1,2,3);
 
 }
 
