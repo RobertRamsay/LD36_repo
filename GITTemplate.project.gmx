@@ -64,6 +64,7 @@
       <object>objects\o_plant</object>
       <object>objects\o_tree</object>
       <object>objects\o_Rock</object>
+      <object>objects\o_grid</object>
     </objects>
   </objects>
   <rooms name="rooms">

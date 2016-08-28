@@ -101,6 +101,7 @@
     <instance objName="o_plant" x="664" y="448" name="inst_05CF38A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_Enemy1" x="576" y="608" name="inst_F694E5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="936" y="416" name="inst_F172C93D" locked="0" code="stop=1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_grid" x="0" y="0" name="inst_02561E9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
