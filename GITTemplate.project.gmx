@@ -43,6 +43,7 @@
   <backgrounds name="background">
     <background>background\b_map1</background>
     <background>background\b_tileSet1</background>
+    <background>background\bg_layout</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
