@@ -14,8 +14,12 @@
       <sprite>sprites\s_hitClub_R</sprite>
       <sprite>sprites\s_Player3</sprite>
       <sprite>sprites\s_Player3_alt</sprite>
+      <sprite>sprites\s_Player3_aim_R</sprite>
+      <sprite>sprites\s_Player3_hit_R</sprite>
       <sprite>sprites\s_Player4</sprite>
       <sprite>sprites\s_Player4_alt</sprite>
+      <sprite>sprites\s_Player4_hit_R</sprite>
+      <sprite>sprites\s_Player4_aim_R</sprite>
     </sprites>
     <sprites name="World">
       <sprite>sprites\s_TemplateGrass</sprite>
