@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>36</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>16777215</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_template" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="background3" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -310,7 +310,6 @@
     <tile bgName="b_tileSet1" x="3072" y="1856" w="64" h="64" xo="576" yo="448" id="10000317" name="inst_4555C77D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="3008" y="1920" w="64" h="64" xo="576" yo="448" id="10000318" name="inst_D6B13F14" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="3008" y="1984" w="64" h="64" xo="576" yo="448" id="10000319" name="inst_285C208D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="b_tileSet1" x="3008" y="2048" w="64" h="64" xo="576" yo="448" id="10000320" name="inst_A69FC6E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="3008" y="2112" w="64" h="64" xo="576" yo="448" id="10000321" name="inst_C965B7DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="2944" y="2176" w="64" h="64" xo="576" yo="448" id="10000322" name="inst_0CA224BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="2944" y="2240" w="64" h="64" xo="576" yo="448" id="10000323" name="inst_5CFE2C09" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -983,6 +982,7 @@
     <tile bgName="b_tileSet1" x="3200" y="448" w="64" h="64" xo="256" yo="384" id="10001201" name="inst_09B125D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="3264" y="448" w="64" h="64" xo="320" yo="384" id="10001202" name="inst_5C09516E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_tileSet1" x="3456" y="576" w="64" h="64" xo="384" yo="192" id="10001203" name="inst_67E57C34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_tileSet1" x="3008" y="2048" w="64" h="64" xo="576" yo="448" id="10001204" name="inst_CA4F6B25" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

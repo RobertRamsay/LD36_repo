@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>640</width>
-  <height>640</height>
-  <data>images\b_tileSet1.png</data>
+  <width>4096</width>
+  <height>4096</height>
+  <data>images\background3.png</data>
 </background>
