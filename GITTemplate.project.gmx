@@ -44,7 +44,9 @@
     <background>background\b_map1</background>
     <background>background\b_tileSet1</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\s_test.gml</script>
     <script>scripts\script1.gml</script>
