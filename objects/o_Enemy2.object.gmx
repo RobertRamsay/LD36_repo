@@ -56,9 +56,92 @@ pathL=0;
 spriteChange=0;
 sprite0=s_Player4;
 sprite1=s_Player4_alt;
+spriteAimR=s_Player4_aim_R
+spriteAimL=s_Player4_aim_R // to update to L
+spriteHitR=s_Player4_hit_R
+spriteHitL=s_Player4_hit_R // to update to L
 animstate=0;
-idle=0;
+idle=0
 animspeed=3;
+clubleft=1 
+clubright=2
+done=0 // for coming out
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// hitframe Left
+sprite_index=spriteHitL
+alarm[0]=7
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// hitframe Right
+sprite_index=spriteHitR
+alarm[0]=7
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// go to idle mode
+animstate=idle;done=0
+sprite_index=s_Player4
 
 </string>
           </argument>
@@ -155,14 +238,44 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
     rand=choose(1,2);
 }
 
+// AI attacking
+
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;80 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50 
+    {
+    // hit left
+    animstate=clubleft
+    }
+    
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;80 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50+180 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50+180 
+    {
+    // hit right
+    animstate=clubright
+    }
+
+// Animation states
+
 if animstate=idle
     {
-    spriteChange+=speed*animspeed
+    spriteChange+=speed*animspeed;
         {
         if spriteChange&lt;=50 sprite_index=sprite0
         if spriteChange&gt;50 sprite_index=sprite1
         }
     if spriteChange&gt;100 spriteChange=0
+    }
+    
+
+    
+if animstate=clubright and done=0
+    {
+    sprite_index=spriteAimR
+    alarm[1]=10;done=1
+    }
+    
+if animstate=clubleft and done=0
+    {
+    sprite_index=spriteAimL
+    alarm[2]=10;done=1
     }
 </string>
           </argument>
