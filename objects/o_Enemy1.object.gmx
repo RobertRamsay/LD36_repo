@@ -66,7 +66,7 @@ animspeed=3;
 clubleft=1 
 clubright=2
 done=0 // for coming out
-
+strikedistance=80
 </string>
           </argument>
         </arguments>
@@ -240,13 +240,13 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 
 // AI attacking
 
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;80 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50 
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50 
     {
     // hit left
     animstate=clubleft
     }
     
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;80 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50+180 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50+180 
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50+180 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50+180 
     {
     // hit right
     animstate=clubright
