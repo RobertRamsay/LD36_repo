@@ -50,6 +50,7 @@ i_angle=0;
 nextstop = 0;
 //rand=choose(1,2,3);
 getNode=noone;
+pathL = 0;
 </string>
           </argument>
         </arguments>
@@ -75,6 +76,7 @@ getNode=noone;
             <string>///Navigation
 
 //Build\Find My Path
+/*
 with (o_NODE) {
    if ( stop == other.nextstop + 1 ) {
        //if (rand == other.rand) {
@@ -82,10 +84,16 @@ with (o_NODE) {
        //}
    }
 }
+*/
+
+pathL = path_get_number(path0);
+
+xP = path_get_point_x(path0, nextstop);
+yP = path_get_point_y(path0, nextstop);
     
-if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
+if ( point_distance(x,y,xP,yP) &gt; 64 ) {
     
-    var pd = (point_direction(x,y,getNode.x,getNode.y) div 10) * 10;
+    var pd = (point_direction(x,y,xP,yP) div 10) * 10;
     var ad = angle_difference(image_index*10, pd);
     
     
@@ -97,18 +105,23 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
     motion_set(PIAngle, speed);
     
     
-    if ( point_distance(x,y,getNode.x,getNode.y) &lt; 128 &amp;&amp; caution &gt;= 1 ) {
-        speed = (maxSpeed + 5) - caution;
+    if ( point_distance(x,y,xP,yP) &lt; 128 &amp;&amp; caution &gt;= 1 ) {
+        speed = (maxSpeed + 8) - caution;
     } else {
-        speed = (maxSpeed + 5)
+        speed = (maxSpeed + 8)
     }
     
 } else {
-    
-    nextstop +=1
-    //rand=choose(1,2,3);
+    if ( nextstop &lt; pathL - 1 ) {
+        nextstop += 1;
+    } else {
+        nextstop = 1;
+    }   
 
+    //rand=choose(1,2,3);
 }
+/*
+
 </string>
           </argument>
         </arguments>
@@ -131,7 +144,10 @@ if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50, 100, i_angle);
+            <string>draw_text(50, 100, pathL);
+draw_text(50, 150, nextstop);
+draw_text(50, 200, xP);
+draw_text(50, 250, yP);
 </string>
           </argument>
         </arguments>
