@@ -25,34 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///Enemy Init
+
+//Base Variables
 image_speed = 0;
-
 image_blend=c_red;
-
-maxSpeed = 1;
-
-tires = 1;
-
-caution = 1;
-
 friction=0.2
 
-// Movement\Turning
+//Vehicl\Driver Variables
+maxSpeed = 1;
+tires = 1;
+tBoost = 0;
+sBoost = 0;
+caution = 1;
+aggro = 0;
 
+// Movement\Turning Variables
 myDir = instance_create(x,y,o_Angle);
-
 myDir.pFollow = id;
-
 PIAngle = 0;
-
 i_angle=0;
 
-//Navigation
+//Navigation Variables
 nextstop = 0;
-
 //rand=choose(1,2,3);
-
 getNode=noone;
 </string>
           </argument>
@@ -76,13 +72,15 @@ getNode=noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (o_NODE) {
+            <string>///Navigation
+
+//Build\Find My Path
+with (o_NODE) {
    if ( stop == other.nextstop + 1 ) {
        //if (rand == other.rand) {
             other.getNode = id;
        //}
    }
-    
 }
     
 if ( point_distance(x,y,getNode.x,getNode.y) &gt; 64 ) {

@@ -71,34 +71,9 @@ if (pFollow != noone) {
 var pd = pFollow.image_index * 10;
 var dd = angle_difference(image_angle, pd);
 
-rotSpeed = clamp(10-((pFollow.speed/(pFollow.maxSpeed+5))*10),pFollow.tires+2,10);
-
-maths = rotSpeed
+rotSpeed = clamp(10-((pFollow.speed/(pFollow.maxSpeed+5))*10),((pFollow.tires+2)+pFollow.tBoost),10);
 
 image_angle -= min(abs(dd), rotSpeed) * sign(dd);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(50, 50, maths);
 </string>
           </argument>
         </arguments>

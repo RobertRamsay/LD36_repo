@@ -27,21 +27,22 @@
             <kind>1</kind>
             <string>///Player Init
 
+//Stop from changing images on own
 image_speed = 0;
-
-PIAngle = 0;
-
-maxSpeed = 5;
-tires = 1;
-
 friction=0.2
 
-myDir = instance_create(x,y,o_Angle);
+//Vehicle\Driver Variables
+maxSpeed = 5;
+tires = 1;
+sBoost=0;
+tBoost=0;
 
+//Turning Variables
+PIAngle = 0;
+myDir = instance_create(x,y,o_Angle);
 myDir.pFollow = id;
 
 // animation states // enums for anim states
-
 animstate=0 // idle
 idle=0
 clubleft=1 
