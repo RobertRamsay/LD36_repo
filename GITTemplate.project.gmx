@@ -46,6 +46,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
+    <path>paths\path1</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\s_test.gml</script>

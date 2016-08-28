@@ -48,9 +48,9 @@ i_angle=0;
 
 //Navigation Variables
 nextstop = 0;
-//rand=choose(1,2,3);
+rand=choose(1,2);
 getNode=noone;
-pathL = 0;
+pathL=0;
 </string>
           </argument>
         </arguments>
@@ -76,20 +76,22 @@ pathL = 0;
             <string>///Navigation
 
 //Build\Find My Path
-/*
-with (o_NODE) {
-   if ( stop == other.nextstop + 1 ) {
-       //if (rand == other.rand) {
-            other.getNode = id;
-       //}
-   }
+
+switch (rand) {
+
+    case 1:
+        xP = path_get_point_x(path0, nextstop);
+        yP = path_get_point_y(path0, nextstop);
+        pathL = path_get_number(path0);
+        break
+    
+    case 2:
+        xP = path_get_point_x(path1, nextstop);
+        yP = path_get_point_y(path1, nextstop);
+        pathL = path_get_number(path1);
+        break
+        
 }
-*/
-
-pathL = path_get_number(path0);
-
-xP = path_get_point_x(path0, nextstop);
-yP = path_get_point_y(path0, nextstop);
     
 if ( point_distance(x,y,xP,yP) &gt; 64 ) {
     
@@ -116,12 +118,9 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
         nextstop += 1;
     } else {
         nextstop = 1;
-    }   
-
-    //rand=choose(1,2,3);
+    }
+    rand=choose(1,2);
 }
-/*
-
 </string>
           </argument>
         </arguments>
@@ -144,10 +143,7 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50, 100, pathL);
-draw_text(50, 150, nextstop);
-draw_text(50, 200, xP);
-draw_text(50, 250, yP);
+            <string>draw_text(50, 150, nextstop);
 </string>
           </argument>
         </arguments>
