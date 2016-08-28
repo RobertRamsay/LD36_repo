@@ -29,7 +29,7 @@
 
 //Base Variables
 image_speed = 0;
-image_blend=c_red;
+//image_blend=c_red;
 friction=0.2
 
 //Vehicl\Driver Variables
@@ -51,6 +51,13 @@ nextstop = 0;
 rand=choose(1,2);
 getNode=noone;
 pathL=0;
+
+// Sprite Change
+sprite0=s_Player3;
+sprite1=s_Player3_alt;
+animstate=0;
+idle=0
+
 </string>
           </argument>
         </arguments>
@@ -121,6 +128,15 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
     }
     rand=choose(1,2);
 }
+
+if animstate=idle
+    {
+    for (spriteChange=0;spriteChange&lt;100;spriteChange+=speed) 
+        {
+        if spriteChange&lt;=50 sprite_index=sprite0
+        if spriteChange&gt;50 sprite_index=sprite1
+        }
+    }
 </string>
           </argument>
         </arguments>
