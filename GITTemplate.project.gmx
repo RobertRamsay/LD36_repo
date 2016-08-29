@@ -49,6 +49,7 @@
         <sprite>sprites\s_rock</sprite>
         <sprite>sprites\s_tree</sprite>
       </sprites>
+      <sprite>sprites\s_chalkLine</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\s_Enemy1</sprite>
@@ -109,8 +110,10 @@
     </objects>
     <objects name="menu">
       <object>objects\o_startButn</object>
+      <object>objects\o_difficulty</object>
     </objects>
     <object>objects\o_gold</object>
+    <object>objects\o_finLine</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>

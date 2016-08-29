@@ -2,9 +2,9 @@
 <object>
   <spriteName>s_TemplateWater</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -31,6 +31,10 @@ position = ds_priority_create();
 ds_priority_add(position, "Player", 0);
 ds_priority_add(position, "Red Driver", 1);
 ds_priority_add(position, "Blue Driver", 2);
+
+diff=0;
+count=0; // tally positional bits for knowing a lap
+laps=0;
 </string>
           </argument>
         </arguments>
@@ -53,9 +57,19 @@ ds_priority_add(position, "Blue Driver", 2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(500, 50, ds_priority_find_priority(position,"Player"));
-draw_text(500, 100, ds_priority_find_priority(position,"Red Driver"));
-draw_text(500, 150, ds_priority_find_priority(position,"Blue Driver"));
+            <string>//draw_text(500, 50, ds_priority_find_priority(position,"Player"));
+//draw_text(500, 100, ds_priority_find_priority(position,"Red Driver"));
+//draw_text(500, 150, ds_priority_find_priority(position,"Blue Driver"));
+if room=rm_GameWorld
+    {
+   // draw_text(100,100,string(mouse_x)+" : "+string(mouse_y))
+    draw_sprite(s_numbers,(ds_priority_find_priority(position,"Player"))+1,840,85)
+    draw_sprite(s_slash,0,878,67)
+    draw_sprite(s_numbers,3,920,85)
+    }
+    draw_text(50,50,"Bits hit: "+string(count))
+    
+    draw_text(50,70,"Laps: "+string(laps))
 </string>
           </argument>
         </arguments>
