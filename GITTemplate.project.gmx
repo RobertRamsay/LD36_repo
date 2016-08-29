@@ -72,6 +72,7 @@
       <sprite>sprites\s_numbers</sprite>
       <sprite>sprites\s_score</sprite>
       <sprite>sprites\s_slash</sprite>
+      <sprite>sprites\s_finalLap</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -114,6 +115,7 @@
     </objects>
     <object>objects\o_gold</object>
     <object>objects\o_finLine</object>
+    <object>objects\o_finalMsg</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
