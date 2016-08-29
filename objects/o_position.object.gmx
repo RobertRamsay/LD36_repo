@@ -30,6 +30,8 @@ activated=0;
 lasthit=0;
 done=0;
 
+
+    
 </string>
           </argument>
         </arguments>
@@ -63,6 +65,9 @@ done=0;
 lasthit = other.name;
 
 if done=0 {o_game.count+=1;done=1}
+
+
+
 </string>
           </argument>
         </arguments>
