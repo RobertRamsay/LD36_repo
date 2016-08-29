@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha=0
+            <string>
 iaSpeed=0.025
+alp=0.3
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,10 +50,10 @@ iaSpeed=0.025
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha+=iaSpeed
-if image_alpha&gt;=0.99 {image_alpha=1;iaSpeed=-0.025}
-if image_alpha&lt;0.25 with(self){instance_destroy()}
-x=o_Player.x;y=o_Player.y-150
+            <string>alp+=iaSpeed
+if alp&gt;=3 {iaSpeed=-0.025}
+if alp&lt;0.25 with(self){instance_destroy()}
+draw_sprite_ext(s_finalLap,0,400,250,1,1,0,c_white,clamp(alp,0,1))
 </string>
           </argument>
         </arguments>
