@@ -359,7 +359,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tyres</string>
+            <string>tires</string>
           </argument>
           <argument>
             <kind>0</kind>
