@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>o_car_c</parentName>
   <maskName>s_Player3</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -39,6 +39,7 @@ tBoost = 0;
 sBoost = 0;
 caution = 0;
 aggro = 0;
+name="Blue Driver"
 
 // Movement\Turning Variables
 myDir = instance_create(x,y,o_Angle);

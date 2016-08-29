@@ -67,11 +67,13 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
+    <object>objects\o_position</object>
+    <object>objects\o_game</object>
     <objects name="Player">
-      <object>objects\o_Enemy1</object>
+      <object>objects\o_car_c</object>
+      <object>objects\o_EnemyBlue</object>
       <object>objects\o_EnemyRed</object>
       <object>objects\o_Player</object>
-      <object>objects\o_Enemy2</object>
       <object>objects\o_Angle</object>
       <object>objects\o_NODE</object>
     </objects>

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>o_car_c</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -36,6 +36,7 @@ maxSpeed = 5;
 tires = 1;
 sBoost=0;
 tBoost=0;
+name="Player"
 
 //Turning Variables
 PIAngle = 0;
