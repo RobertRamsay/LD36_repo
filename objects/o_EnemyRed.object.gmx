@@ -245,8 +245,8 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 }
 
 // AI attacking
-
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50 
+draw_text(x,y-100,string(angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))))
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))&lt;50
     {
     // hit left
     animstate=clubleft
