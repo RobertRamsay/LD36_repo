@@ -59,7 +59,18 @@
     </sprites>
     <sprite>sprites\s_AngleGuide</sprite>
     <sprites name="Menu">
-      <sprite>sprites\sprite33</sprite>
+      <sprite>sprites\s_menu</sprite>
+      <sprite>sprites\s_start</sprite>
+      <sprite>sprites\s_easy</sprite>
+      <sprite>sprites\s_medium</sprite>
+      <sprite>sprites\s_hard</sprite>
+      <sprite>sprites\s_bestTimes</sprite>
+      <sprite>sprites\s_lap</sprite>
+      <sprite>sprites\s_nugget</sprite>
+      <sprite>sprites\s_Nuggets</sprite>
+      <sprite>sprites\s_numbers</sprite>
+      <sprite>sprites\s_score</sprite>
+      <sprite>sprites\s_slash</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
