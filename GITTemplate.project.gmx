@@ -110,6 +110,7 @@
     <objects name="menu">
       <object>objects\o_startButn</object>
     </objects>
+    <object>objects\o_gold</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>

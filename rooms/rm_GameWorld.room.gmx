@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4096</width>
   <height>4096</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>6</vsnap>
+  <hsnap>6</hsnap>
   <isometric>0</isometric>
   <speed>36</speed>
   <persistent>0</persistent>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="o_Player" x="768" y="608" name="inst_33848509" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_Player" x="736" y="608" name="inst_33848509" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_grid" x="0" y="0" name="inst_E7C0F1F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="832" y="544" name="inst_A9BBE4D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="832" y="608" name="inst_7E8FDB31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -275,7 +275,7 @@
     <instance objName="o_tree" x="736" y="1760" name="inst_67E65AE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="3360" y="512" name="inst_B820F8A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="1184" y="1952" name="inst_30FB164D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_tree" x="736" y="1440" name="inst_4D8376E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_tree" x="732" y="1422" name="inst_4D8376E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="2208" y="3104" name="inst_F4C6FF79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="3680" y="2848" name="inst_13C8EECC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="3488" y="224" name="inst_9794957A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -285,7 +285,41 @@
     <instance objName="o_tree" x="2016" y="800" name="inst_D68EE7A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_position" x="1088" y="608" name="inst_217530B3" locked="0" code="" scaleX="0.5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="o_game" x="672" y="608" name="inst_D57684DA" locked="0" code="" scaleX="0.5" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="o_EnemyRed" x="768" y="544" name="inst_4558845A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_EnemyRed" x="736" y="512" name="inst_4558845A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_EnemyBlue" x="736" y="704" name="inst_682F2B86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="960" y="608" name="inst_1CDD9122" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="1440" y="876" name="inst_A93ACD34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="1452" y="1044" name="inst_E10ECE98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2106" y="1092" name="inst_FA7A3F74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2508" y="576" name="inst_8A16DDC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2706" y="396" name="inst_13A31043" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2796" y="270" name="inst_ACB96155" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3666" y="678" name="inst_6AD96707" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3684" y="1128" name="inst_F05530FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3504" y="1086" name="inst_9250459C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3474" y="1620" name="inst_554145CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3084" y="1836" name="inst_313958D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3132" y="2406" name="inst_2B40CE17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3576" y="2466" name="inst_417D250F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3684" y="2628" name="inst_FE24E0AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3672" y="3090" name="inst_255EC831" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="3714" y="3198" name="inst_7A96CC6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2952" y="3714" name="inst_FE9FDA9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2544" y="3120" name="inst_FA7E9630" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="2220" y="2844" name="inst_649C3EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="1998" y="3084" name="inst_B6F20AE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="1404" y="3072" name="inst_BF550238" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="540" y="3030" name="inst_38D1FF28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="546" y="2946" name="inst_1400E78A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="834" y="2520" name="inst_E3B335A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="798" y="2280" name="inst_4CBF0843" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="804" y="1770" name="inst_4FE38E89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="738" y="1482" name="inst_2D9E74CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="696" y="1446" name="inst_BBC402BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="372" y="1440" name="inst_15EB5538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="336" y="1206" name="inst_F0719F8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="216" y="888" name="inst_F712BC43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_gold" x="468" y="840" name="inst_57F237F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_tileSet1" x="448" y="576" w="64" h="64" xo="64" yo="192" id="10000002" name="inst_BDA3D4AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
