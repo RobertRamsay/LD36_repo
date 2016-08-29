@@ -221,12 +221,28 @@ sprite_index=s_Player2
           <argument>
             <kind>1</kind>
             <string>///Controls - Driving Phys
-
+if keyboard_check(ord('W'))
+    {
+    speed += 1;
+    
+    if (speed &gt; maxSpeed + 5 ) { speed = maxSpeed + 5; }
+    }
+    
+if keyboard_check(ord('S'))
+    {
+        ///Brakes
+    
+    speed -= 0.5
+    
+    if (speed &lt; 0) {
+        speed = 0;
+    }
+    }
 //Controls
 if ( keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord('A')) or keyboard_check_pressed(ord('D'))) 
     {timeTurning=0;}
 
-if ( keyboard_check(vk_left) or keyboard_check_pressed(ord('A')) ) {
+if ( keyboard_check(vk_left) or keyboard_check(ord('A')) ) {
     image_index += 1;
     timeTurning+=1;
     if timeTurning=7
@@ -235,7 +251,7 @@ if ( keyboard_check(vk_left) or keyboard_check_pressed(ord('A')) ) {
             {audio_play_sound(sou_screech,1,0)}
         }
 }
-if (keyboard_check(vk_right) or keyboard_check_pressed(ord('D'))) {
+if (keyboard_check(vk_right) or keyboard_check(ord('D'))) {
     image_index -= 1
     timeTurning+=1;
     if timeTurning=7
