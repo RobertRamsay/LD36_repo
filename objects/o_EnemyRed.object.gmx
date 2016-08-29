@@ -97,6 +97,7 @@ sprite_index=spriteHitL
 if (angleDifference&gt;-120 and angleDifference&lt;-80) and point_distance(x,y,o_Player.x,o_Player.y)&lt;100
     {
     if !audio_is_playing(sou_hitWithClub) {audio_play_sound(sou_hitWithClub,1,0)}
+    o_Player.maxSpeed-=0.25;o_player.tires-=0.05
     }
 alarm[0]=7
 </string>
@@ -126,6 +127,7 @@ sprite_index=spriteHitR
 if (angleDifference&gt;80 and angleDifference&lt;120) and point_distance(x,y,o_Player.x,o_Player.y)&lt;100
     {
     if !audio_is_playing(sou_hitWithClub) {audio_play_sound(sou_hitWithClub,1,0)}
+    o_Player.maxSpeed-=0.25;o_player.tires-=0.05
     }
 alarm[0]=7
 </string>
