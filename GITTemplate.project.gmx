@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sou_musicTrack</sound>
+    <sound>sound\sou_screech</sound>
+    <sound>sound\sou_hitWithClub</sound>
+    <sound>sound\sou_bump</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
