@@ -6,17 +6,52 @@
   <hsnap>16</hsnap>
   <vsnap>16</vsnap>
   <points>
-    <point>768,576,100</point>
-    <point>976,128,100</point>
-    <point>1616,48,100</point>
-    <point>1776,480,100</point>
-    <point>1728,928,100</point>
-    <point>1632,1232,100</point>
-    <point>1072,1248,100</point>
-    <point>480,1216,100</point>
-    <point>288,1024,100</point>
-    <point>288,736,100</point>
-    <point>64,400,100</point>
-    <point>368,144,100</point>
+    <point>832,608,100</point>
+    <point>1152,576,100</point>
+    <point>1536,1024,100</point>
+    <point>1824,896,100</point>
+    <point>2176,1024,100</point>
+    <point>2560,448,100</point>
+    <point>2912,320,100</point>
+    <point>3104,384,100</point>
+    <point>3296,320,100</point>
+    <point>3584,512,100</point>
+    <point>3712,864,100</point>
+    <point>3552,1344,100</point>
+    <point>3328,1696,100</point>
+    <point>3072,1920,100</point>
+    <point>3008,2240,100</point>
+    <point>3200,2624,100</point>
+    <point>3392,2528,100</point>
+    <point>3584,2560,100</point>
+    <point>3488,2784,100</point>
+    <point>3264,2944,100</point>
+    <point>3488,3232,100</point>
+    <point>3584,3456,100</point>
+    <point>3488,3680,100</point>
+    <point>3232,3776,100</point>
+    <point>2880,3584,100</point>
+    <point>2624,3264,100</point>
+    <point>2368,2880,100</point>
+    <point>2112,3008,100</point>
+    <point>1920,3104,100</point>
+    <point>1376,3168,100</point>
+    <point>1216,3136,100</point>
+    <point>896,3296,100</point>
+    <point>736,3232,100</point>
+    <point>640,2944,100</point>
+    <point>864,2752,100</point>
+    <point>896,2368,100</point>
+    <point>1024,1952,100</point>
+    <point>992,1728,100</point>
+    <point>864,1600,100</point>
+    <point>960,1504,100</point>
+    <point>1088,1408,100</point>
+    <point>992,1312,100</point>
+    <point>832,1216,100</point>
+    <point>512,1312,100</point>
+    <point>288,1312,100</point>
+    <point>288,960,100</point>
+    <point>512,672,100</point>
   </points>
 </path>

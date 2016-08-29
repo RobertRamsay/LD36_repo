@@ -58,11 +58,15 @@
   <paths name="paths">
     <path>paths\path0</path>
     <path>paths\path1</path>
+    <path>paths\path2</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\s_test.gml</script>
     <script>scripts\script1.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\o_Enemy1</object>

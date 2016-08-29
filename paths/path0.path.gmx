@@ -3,20 +3,55 @@
   <closed>-1</closed>
   <precision>4</precision>
   <backroom>1</backroom>
-  <hsnap>16</hsnap>
-  <vsnap>16</vsnap>
+  <hsnap>32</hsnap>
+  <vsnap>32</vsnap>
   <points>
-    <point>784,512,100</point>
-    <point>928,400,100</point>
-    <point>1312,176,100</point>
-    <point>1616,320,100</point>
-    <point>1744,560,100</point>
-    <point>1728,896,100</point>
-    <point>1664,1120,100</point>
-    <point>1248,1200,100</point>
-    <point>832,1184,100</point>
-    <point>576,1040,100</point>
-    <point>528,928,100</point>
-    <point>560,768,100</point>
+    <point>832,544,100</point>
+    <point>1152,512,100</point>
+    <point>1536,960,100</point>
+    <point>1824,832,100</point>
+    <point>2176,960,100</point>
+    <point>2496,416,100</point>
+    <point>2912,256,100</point>
+    <point>3104,320,100</point>
+    <point>3296,256,100</point>
+    <point>3648,512,100</point>
+    <point>3776,864,100</point>
+    <point>3616,1344,100</point>
+    <point>3392,1696,100</point>
+    <point>3136,1920,100</point>
+    <point>3072,2240,100</point>
+    <point>3200,2560,100</point>
+    <point>3360,2496,100</point>
+    <point>3648,2528,100</point>
+    <point>3520,2816,100</point>
+    <point>3328,2944,100</point>
+    <point>3584,3200,100</point>
+    <point>3648,3456,100</point>
+    <point>3552,3744,100</point>
+    <point>3232,3840,100</point>
+    <point>2848,3648,100</point>
+    <point>2560,3296,100</point>
+    <point>2368,2944,100</point>
+    <point>2144,3040,100</point>
+    <point>1920,3136,100</point>
+    <point>1376,3232,100</point>
+    <point>1216,3200,100</point>
+    <point>896,3328,100</point>
+    <point>704,3264,100</point>
+    <point>608,2944,100</point>
+    <point>832,2720,100</point>
+    <point>832,2368,100</point>
+    <point>960,1952,100</point>
+    <point>960,1760,100</point>
+    <point>800,1600,100</point>
+    <point>928,1472,100</point>
+    <point>1024,1408,100</point>
+    <point>960,1344,100</point>
+    <point>832,1280,100</point>
+    <point>512,1344,100</point>
+    <point>192,1344,100</point>
+    <point>224,960,100</point>
+    <point>480,640,100</point>
   </points>
 </path>
