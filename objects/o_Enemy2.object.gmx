@@ -207,28 +207,32 @@ switch (rand) {
         yP = path_get_point_y(path1, nextstop);
         pathL = path_get_number(path1);
         break
-        
+    
+    case 3:
+        xP = path_get_point_x(path2, nextstop);
+        yP = path_get_point_y(path2, nextstop);
+        pathL = path_get_number(path1);
+        break      
 }
     
 if ( point_distance(x,y,xP,yP) &gt; 64 ) {
     
-    var pd = (point_direction(x,y,xP,yP) div 10) * 10;
-    var ad = angle_difference(image_index*10, pd);
-    
-    
-    i_angle -= min(abs(ad), 5) * sign(ad);
-    image_index = i_angle div 10;
-    
+   var pd = (point_direction(x,y,xP,yP) div 10) * 10;
+   var ad = angle_difference(image_index*10, pd); 
+   i_angle -= min(abs(ad), 6) * sign(ad);
+   
+   image_index = i_angle div 10;
+
+    if ( abs(ad) &gt;= 30 ) {
+        caution = clamp(((abs(ad) div 10) - 2), 1, 4);
+        speed = (maxSpeed + 5) - caution;
+    } else {
+        speed = maxSpeed + 5;
+    }        
     
     PIAngle = myDir.image_angle;
     motion_set(PIAngle, speed);
     
-    
-    if ( point_distance(x,y,xP,yP) &lt; 128 &amp;&amp; caution &gt;= 1 ) {
-        speed = (maxSpeed + 8) - caution;
-    } else {
-        speed = (maxSpeed + 8)
-    }
     
 } else {
     if ( nextstop &lt; pathL - 1 ) {
@@ -236,7 +240,7 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
     } else {
         nextstop = 1;
     }
-    rand=choose(1,2);
+    rand=choose(1,2,3);
 }
 
 // AI attacking

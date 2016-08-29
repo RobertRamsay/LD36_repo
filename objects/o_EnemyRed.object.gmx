@@ -54,19 +54,20 @@ pathL=0;
 
 // Sprite Change for making it animate when moving normally (based on speed)
 spriteChange=0;
-sprite0=s_Player3;
-sprite1=s_Player3_alt;
-spriteAimR=s_Player3_aim_R
-spriteAimL=s_Player3_aim_L 
-spriteHitR=s_Player3_hit_R
-spriteHitL=s_Player3_hit_L 
+sprite0=s_Player4;
+sprite1=s_Player4_alt;
+spriteAimR=s_Player4_aim_R
+spriteAimL=s_Player4_aim_L 
+spriteHitR=s_Player4_hit_R
+spriteHitL=s_Player4_hit_L 
 animstate=0;
 idle=0
 animspeed=3;
 clubleft=1 
 clubright=2
 done=0 // for coming out
-strikedistance=80
+strikedistance=100
+
 </string>
           </argument>
         </arguments>

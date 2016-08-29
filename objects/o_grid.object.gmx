@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Init Grid
+            <string>///Init Grid - Fill empty, proc gen rest of world
 
 gw = room_width div 64;
 gh = room_height div 64;
+ox_rand=0;
+oy_rand=0;
 
 bg_grid = ds_grid_create(gw, gh);
 
@@ -36,9 +38,30 @@ for (var i = 0; i &lt; 64; i += 1) {
     for (var j = 0; j &lt; 64; j += 1) {
         getTile = tile_layer_find(1000000,i*64,j*64)
         if (getTile == -1) {
+            
+            o_rand = choose(0,0,0,0,1,1,1,2,2,3)
+            ox_rand = choose(16,32,48)
+            oy_rand = choose(16,32,48)
+            
+            switch (o_rand) {
+                case 0:
+                    //Nadda
+                    break
+                case 1:
+                    instance_create((i*64)+ox_rand,(j*64)+oy_rand,o_plant);
+                    break
+                
+                case 2:
+                    instance_create((i*64)+ox_rand,(j*64)+oy_rand,o_Rock);
+                    break
+                
+                case 3:
+                    instance_create((i*64)+ox_rand,(j*64)+oy_rand,o_tree);
+                    break
+            }
             getTile = tile_add(b_tileSet1,128,192,64,64,i*64,j*64,1000001);
         }
-        tile_set_alpha(getTile,0.70);
+        tile_set_alpha(getTile,0.60);
     }
 }
 </string>
