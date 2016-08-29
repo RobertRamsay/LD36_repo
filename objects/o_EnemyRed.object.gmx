@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>o_car_c</parentName>
-  <maskName>s_Player3</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -33,7 +33,7 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 2;
+maxSpeed = 1;
 tires = 3;
 tBoost = 0;
 sBoost = 0;
@@ -94,6 +94,10 @@ strikedistance=100
             <kind>1</kind>
             <string>/// hitframe Left
 sprite_index=spriteHitL
+if (angleDifference&lt;-120 and angleDifference&gt;-80) and point_distance(x,y,o_Player.x,o_Player.y)&lt;100
+    {
+    if !audio_is_playing(sou_hitWithClub) {audio_play_sound(sou_hitWithClub,1,0)}
+    }
 alarm[0]=7
 </string>
           </argument>
@@ -119,6 +123,10 @@ alarm[0]=7
             <kind>1</kind>
             <string>/// hitframe Right
 sprite_index=spriteHitR
+if (angleDifference&gt;80 and angleDifference&lt;120) and point_distance(x,y,o_Player.x,o_Player.y)&lt;100
+    {
+    if !audio_is_playing(sou_hitWithClub) {audio_play_sound(sou_hitWithClub,1,0)}
+    }
 alarm[0]=7
 </string>
           </argument>
@@ -246,9 +254,9 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 }
 
 // AI attacking
-angleDifference=angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)));
+angleDifference=angle_difference(PIAngle,(point_direction(x,y,o_Player.x,o_Player.y)));
 
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;-100 and angleDifference &lt;-80
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;-120 and angleDifference &lt;-80
     {
     // hit left
     if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
@@ -402,6 +410,7 @@ if animstate=clubleft and done=0
           <argument>
             <kind>1</kind>
             <string>draw_text(10,100,string(angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))))
+draw_text(10,130,point_distance(x,y,o_Player.x,o_Player.y))
 /*draw_set_font(font0);
 draw_text(50, 150, nextstop);
 draw_text(50, 180, speed);
