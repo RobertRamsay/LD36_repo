@@ -274,7 +274,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(PIAngle,-(clamp(speed*1.5,4,7)));
+            <string>motion_set(PIAngle,0);
 </string>
           </argument>
         </arguments>
@@ -297,7 +297,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(PIAngle,-(clamp(speed*1.5,4,7)));
+            <string>motion_set(PIAngle,0);
 </string>
           </argument>
         </arguments>
@@ -343,7 +343,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(other.direction, other.speed*1.6);
+            <string>speed*=0.8;
 </string>
           </argument>
         </arguments>
@@ -366,7 +366,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(other.direction, other.speed*1.6);
+            <string>speed*=0.8;
 </string>
           </argument>
         </arguments>
