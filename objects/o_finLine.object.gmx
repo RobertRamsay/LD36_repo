@@ -50,7 +50,13 @@
             <kind>1</kind>
             <string>/// cross lap line...
 if o_game.count&gt;= 40 {o_game.laps+=1;o_game.count=0;o_position.done=0}
-if o_game.laps=3 and finalLapWarn=0 {instance_create(0,0,o_finalMsg);finalLapWarn=1}
+if o_game.laps=2 and finalLapWarn=0 
+    {
+    instance_create(o_Player.x,o_Player.y,o_finalMsg);
+
+    if !audio_is_playing(sou_slide) audio_play_sound(sou_slide,1,0)
+        finalLapWarn=1;
+    }
 </string>
           </argument>
         </arguments>
