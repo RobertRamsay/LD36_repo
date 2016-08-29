@@ -270,7 +270,7 @@ if ( keyboard_check_pressed(ord('Z')) or mouse_check_button_pressed(mb_left)) {
     animstate=clubleft
     }
     
-if ( keyboard_check_pressed(ord('X'))or mouse_check_button_pressed(mb_left) ) {
+if ( keyboard_check_pressed(ord('X'))or mouse_check_button_pressed(mb_right) ) {
     // hit right
     animstate=clubright
     }
@@ -316,6 +316,30 @@ if animstate=clubleft and done=0
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>maxSpeed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.2</string>
           </argument>
         </arguments>
       </action>

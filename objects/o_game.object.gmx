@@ -32,6 +32,7 @@ ds_priority_add(position, "Player", 0);
 ds_priority_add(position, "Red Driver", 1);
 ds_priority_add(position, "Blue Driver", 2);
 
+
 diff=0;
 count=0; // tally positional bits for knowing a lap
 laps=0;
@@ -73,6 +74,9 @@ if room=rm_GameWorld
     draw_sprite(s_numbers,clamp(laps+1,1,3),120,85)
     draw_sprite(s_slash,0,157,67)
     draw_sprite(s_numbers,3,196,85)
+    draw_sprite(s_Nuggets,0,475,50)
+    draw_sprite(s_numbers,real(string(string_char_at(string(o_Player.gold),1))),565,80)
+    if string_length(string(o_Player.gold))&gt;1 draw_sprite(s_numbers,real(string(string_char_at(string(o_Player.gold),2))),615,80)
     }
 </string>
           </argument>
