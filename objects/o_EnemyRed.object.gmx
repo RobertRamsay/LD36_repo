@@ -33,13 +33,14 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 4;
+maxSpeed = 2;
 tires = 3;
 tBoost = 0;
 sBoost = 0;
 caution = 0;
 aggro = 0;
 name="Red Driver"
+angleDifference=0 // for working out angle to attack 
 
 // Movement\Turning Variables
 myDir = instance_create(x,y,o_Angle);
@@ -245,16 +246,19 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 }
 
 // AI attacking
+angleDifference=angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)));
 
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))&lt;50
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;-100 and angleDifference &lt;-80
     {
     // hit left
+    if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
     animstate=clubleft
     }
     
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50+180 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50+180 
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;80 and angleDifference&lt;120
     {
     // hit right
+    if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
     animstate=clubright
     }
 
@@ -397,7 +401,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x,y-100,string(angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))))
+            <string>draw_text(10,100,string(angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))))
 /*draw_set_font(font0);
 draw_text(50, 150, nextstop);
 draw_text(50, 180, speed);

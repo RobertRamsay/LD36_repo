@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if collision_point(mouse_x,mouse_y,o_startButn,0,0)
+            <string>if collision_point(mouse_x,mouse_y,o_startButn,0,0) or keyboard_check(vk_space)
     {
-    if mouse_check_button_released(mb_any) 
+    if mouse_check_button_released(mb_any) or keyboard_check(vk_space)
         {
         room_goto(rm_GameWorld)
         }

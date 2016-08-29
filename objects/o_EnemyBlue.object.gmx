@@ -244,16 +244,19 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 }
 
 // AI attacking
+angleDifference=angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)));
 
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50 
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;-100 and angleDifference &lt;-80
     {
     // hit left
+    if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
     animstate=clubleft
     }
     
-if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and (direction-point_direction(o_Player.x,o_Player.y,x,y))&gt;-50+180 and (direction-point_direction(o_Player.x,o_Player.y,x,y))&lt;50+180 
+if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;80 and angleDifference&lt;120
     {
     // hit right
+    if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
     animstate=clubright
     }
 

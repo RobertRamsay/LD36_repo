@@ -274,7 +274,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(PIAngle,0);
+            <string>motion_set(PIAngle,-speed*0.3);
 </string>
           </argument>
         </arguments>
@@ -297,7 +297,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(PIAngle,0);
+            <string>motion_set(PIAngle,-speed*0.6);
 </string>
           </argument>
         </arguments>
@@ -426,6 +426,22 @@ if (speed &gt; maxSpeed + 5 ) { speed = maxSpeed + 5; }
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>331</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

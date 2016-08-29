@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>36</speed>
+  <speed>20</speed>
   <persistent>0</persistent>
   <colour>16777215</colour>
   <showcolour>-1</showcolour>
@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="o_Player" x="768" y="608" name="inst_33848509" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_EnemyBlue" x="768" y="672" name="inst_F694E5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_grid" x="0" y="0" name="inst_E7C0F1F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="832" y="544" name="inst_A9BBE4D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_NODE" x="832" y="608" name="inst_7E8FDB31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -284,9 +283,10 @@
     <instance objName="o_tree" x="2400" y="1056" name="inst_8B379C05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="2016" y="1120" name="inst_8E884048" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_tree" x="2016" y="800" name="inst_D68EE7A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_EnemyRed" x="768" y="544" name="inst_12CB0E90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_position" x="1088" y="608" name="inst_217530B3" locked="0" code="" scaleX="0.5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="o_game" x="672" y="608" name="inst_D57684DA" locked="0" code="" scaleX="0.5" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="o_EnemyRed" x="768" y="544" name="inst_4558845A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_EnemyBlue" x="768" y="672" name="inst_19F2DD12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_tileSet1" x="448" y="576" w="64" h="64" xo="64" yo="192" id="10000002" name="inst_BDA3D4AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
