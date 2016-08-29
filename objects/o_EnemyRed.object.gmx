@@ -33,7 +33,7 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 1;
+maxSpeed = 4;
 tires = 3;
 tBoost = 0;
 sBoost = 0;
@@ -94,7 +94,7 @@ strikedistance=100
             <kind>1</kind>
             <string>/// hitframe Left
 sprite_index=spriteHitL
-if (angleDifference&lt;-120 and angleDifference&gt;-80) and point_distance(x,y,o_Player.x,o_Player.y)&lt;100
+if (angleDifference&gt;-120 and angleDifference&lt;-80) and point_distance(x,y,o_Player.x,o_Player.y)&lt;100
     {
     if !audio_is_playing(sou_hitWithClub) {audio_play_sound(sou_hitWithClub,1,0)}
     }
@@ -259,6 +259,19 @@ angleDifference=angle_difference(PIAngle,(point_direction(x,y,o_Player.x,o_Playe
 if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;-120 and angleDifference &lt;-80
     {
     // hit left
+        if o_Player.sprite_index=s_hitClub_R // is the player trying to hit me?
+        {
+        if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance-20 
+            {
+            //be hit by player 
+            if !audio_is_playing(sou_hitWithClub) 
+                {
+                audio_play_sound(sou_hitWithClub,1,0)
+                } 
+            }
+        }
+        
+    // take a swipe at player
     if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
     animstate=clubleft
     }
@@ -266,6 +279,19 @@ if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifferen
 if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifference &gt;80 and angleDifference&lt;120
     {
     // hit right
+        if o_Player.sprite_index=s_hitClub_L // is the player trying to hit me?
+        {
+        if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance-20 
+            {
+            //be hit by player 
+            if !audio_is_playing(sou_hitWithClub) 
+                {
+                audio_play_sound(sou_hitWithClub,1,0)
+                } 
+            }
+        }
+        
+    // take a swipe at player
     if !audio_is_playing(sou_swipe) and animstate=idle audio_play_sound(sou_swipe,1,0); 
     animstate=clubright
     }

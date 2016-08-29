@@ -343,7 +343,7 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(PIAngle,-speed*0.2); //bump me back
+            <string>motion_set(PIAngle,speed*0.9); //bump me back
 other.speed*=1.1; // nudge the other player
 </string>
           </argument>
@@ -367,7 +367,7 @@ other.speed*=1.1; // nudge the other player
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(PIAngle,-speed*0.2); //bump me back
+            <string>motion_set(PIAngle,speed*0.9); //bump me back
 other.speed*=1.1; // nudge the other player
 </string>
           </argument>
