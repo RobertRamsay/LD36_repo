@@ -33,8 +33,8 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 2+(o_game.diff*3);
-tires = 3+(o_game.diff*3);
+maxSpeed = 3+(o_game.diff*2);
+tires = 4+(o_game.diff*2);
 tBoost = 0;
 sBoost = 0;
 caution = 0;
