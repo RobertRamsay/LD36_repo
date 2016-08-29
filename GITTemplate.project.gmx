@@ -58,10 +58,14 @@
       <sprite>sprites\s_node</sprite>
     </sprites>
     <sprite>sprites\s_AngleGuide</sprite>
+    <sprites name="Menu">
+      <sprite>sprites\sprite33</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\b_tileSet1</background>
     <background>background\background3</background>
+    <background>background\bkg_Splash</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -91,6 +95,9 @@
       <object>objects\o_tree</object>
       <object>objects\o_Rock</object>
       <object>objects\o_grid</object>
+    </objects>
+    <objects name="menu">
+      <object>objects\o_startButn</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -33,8 +33,8 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 5;
-tires = 5;
+maxSpeed = 4;
+tires = 3;
 tBoost = 0;
 sBoost = 0;
 caution = 0;
@@ -245,7 +245,7 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 }
 
 // AI attacking
-draw_text(x,y-100,string(angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))))
+
 if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))&lt;50
     {
     // hit left
@@ -397,7 +397,8 @@ if animstate=clubleft and done=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*draw_set_font(font0);
+            <string>draw_text(x,y-100,string(angle_difference(direction,(point_direction(x,y,o_Player.x,o_Player.y)))))
+/*draw_set_font(font0);
 draw_text(50, 150, nextstop);
 draw_text(50, 180, speed);
 </string>
