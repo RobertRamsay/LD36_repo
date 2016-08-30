@@ -60,11 +60,6 @@ laps=0;
             <kind>1</kind>
             <string>if (laps &gt;= 3) {
     room_goto(rm_gameover);
-    if ( ds_priority_find_priority(position,"Player") = 1 ) {
-        win.image_index=0;
-    } else {
-        win.image_index=1;
-    }
 }
 </string>
           </argument>
