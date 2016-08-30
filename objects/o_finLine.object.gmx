@@ -57,6 +57,9 @@ if o_game.laps=2 and finalLapWarn=0
     if !audio_is_playing(sou_slide) audio_play_sound(sou_slide,1,0)
         finalLapWarn=1;
     }
+if (o_game.laps &gt;= 3) {
+    room_goto(rm_gameover);
+}
 </string>
           </argument>
         </arguments>
