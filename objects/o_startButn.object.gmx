@@ -29,7 +29,12 @@
     {
     if mouse_check_button_released(mb_any) or keyboard_check(vk_space)
         {
-        room_goto(rm_GameWorld)
+            if ( room_previous(room) = 1 ) {
+                game_restart();
+            } else {
+                room_goto(rm_GameWorld)   
+            }
+        
         }
     }
     
