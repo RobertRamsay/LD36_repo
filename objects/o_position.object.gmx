@@ -66,8 +66,6 @@ lasthit = other.name;
 
 if done=0 {o_game.count+=1;done=1}
 
-
-
 </string>
           </argument>
         </arguments>

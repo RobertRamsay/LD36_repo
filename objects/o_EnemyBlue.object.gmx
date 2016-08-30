@@ -33,11 +33,11 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 3+(o_game.diff*2);
-tires = 4+(o_game.diff*2);
+maxSpeed = 3+(o_game.diff);
+tires = 3+(o_game.diff);
 tBoost = 0;
 sBoost = 0;
-caution = 0;
+caution = 0+(o_game.diff);
 aggro = 0;
 name="Blue Driver"
 
@@ -234,9 +234,15 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 
     if ( abs(ad) &gt;= 30 ) {
         caution = clamp(((abs(ad) div 10) - 2), 1, 4);
-        speed = (maxSpeed + 5) - caution;
+        //speed += (maxSpeed + 5) / 10
+        //if ( speed &gt; (maxSpeed + 5) - caution ) {
+            speed = (maxSpeed + 5) - caution;    
+        //}
     } else {
-        speed = maxSpeed + 5;
+        //speed += (maxSpeed + 5) / 10
+        //if ( speed &gt; (maxSpeed + 5) ) {
+            speed = (maxSpeed + 5);    
+        //}
     }        
     
     PIAngle = myDir.image_angle;
@@ -269,6 +275,9 @@ if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifferen
                 speed*=0.5
                 maxSpeed -= 0.1
                 tires -= 0.1
+                if (caution &gt; 0) {
+                    caution -= 0.1
+                }
                 } 
             }
         }
@@ -415,31 +424,6 @@ if animstate=clubleft and done=0
           <argument>
             <kind>1</kind>
             <string>motion_set(other.direction, other.speed*1.6);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*draw_set_font(font0);
-draw_text(50, 150, nextstop);
-draw_text(50, 180, speed);
 </string>
           </argument>
         </arguments>

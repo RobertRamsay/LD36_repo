@@ -33,7 +33,7 @@ friction=0.2
 
 //Vehicle\Driver Variables
 maxSpeed = 5;
-tires = 1;
+tires = 2;
 sBoost=0;
 tBoost=0;
 name="Player"

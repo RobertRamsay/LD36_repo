@@ -33,11 +33,11 @@ image_speed = 0;
 friction=0.2
 
 //Vehicl\Driver Variables
-maxSpeed = 4+(o_game.diff*3);
-tires = 3+(o_game.diff*3);
+maxSpeed = 4+(o_game.diff);
+tires = 2+(o_game.diff);
 tBoost = 0;
 sBoost = 0;
-caution = 0;
+caution = 0+(o_game.diff);
 aggro = 0;
 name="Red Driver"
 angleDifference=0 // for working out angle to attack 
@@ -235,9 +235,15 @@ if ( point_distance(x,y,xP,yP) &gt; 64 ) {
 
     if ( abs(ad) &gt;= 30 ) {
         caution = clamp(((abs(ad) div 10) - 2), 1, 4);
-        speed = (maxSpeed + 5) - caution;
+        //speed += (maxSpeed + 5) / 10
+        //if ( speed &gt; (maxSpeed + 5) - caution ) {
+            speed = (maxSpeed + 5) - caution;    
+        //}
     } else {
-        speed = maxSpeed + 5;
+        //speed += (maxSpeed + 5) / 10
+        //if ( speed &gt; (maxSpeed + 5) ) {
+            speed = (maxSpeed + 5);    
+        //}
     }        
     
     PIAngle = myDir.image_angle;
@@ -270,6 +276,9 @@ if point_distance(o_Player.x,o_Player.y,x,y)&lt;strikedistance and angleDifferen
                 speed*=0.5
                 maxSpeed -= 0.1
                 tires -= 0.1
+                if (caution &gt; 0) {
+                    caution -= 0.1
+                }
                 } 
             }
         }
