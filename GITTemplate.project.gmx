@@ -124,7 +124,6 @@
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_GameWorld</room>
     <room>rooms\rm_gameover</room>
-    <room>rooms\Robs_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
